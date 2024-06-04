@@ -1,0 +1,259 @@
+.btn {
+  width: 186px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.btn__fonce {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.btn__clair {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.btn__clair .blabla {
+  color: red;
+}
+
+.btn-nouveau {
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background: rgb(153, 226, 208);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn-like {
+  font-size: 22px;
+}
+
+.btn-like__liked {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+.btn-retour {
+  font-size: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "roboto";
+  background-color: rgb(246, 246, 246);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background-color: #fff;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 63px;
+  font-family: "Pacifico";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 900;
+  margin: 0;
+}
+header .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(234, 234, 234);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+header .location img {
+  margin-right: 5px;
+  width: 12px;
+  height: 16px;
+}
+
+main .hero {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+main .hero h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+main .hero p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: center;
+  color: rgb(53, 53, 53);
+}
+main .functionality {
+  padding: 20px;
+}
+main .functionality h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+main .functionality .steps {
+  display: flex;
+  flex-direction: column;
+}
+main .functionality .steps .step {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  height: 72px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+main .functionality .steps .step .step-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(147, 86, 220);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+main .functionality .steps .step img {
+  margin: 0 15px 0 15px;
+}
+main .functionality .steps .step p {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+main .restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+main .restaurants h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+main .restaurants .restaurant-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+main .restaurants .restaurant-card img {
+  width: 100%;
+  height: 231px;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .restaurants .restaurant-card .restaurant-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+main .restaurants .restaurant-card .restaurant-info h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+main .restaurants .restaurant-card .restaurant-info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+main .restaurants .restaurant-card .restaurant-info img {
+  width: 35px;
+  height: 25px;
+  color: rgb(16, 16, 16);
+}
+main .restaurants .restaurant-card .badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 2px;
+  background: rgb(153, 226, 208);
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  background: rgb(53, 53, 53);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .logo {
+  font-family: "Pacifico";
+  font-style: italic;
+  font-size: 24px;
+}
+footer .footer-links {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+footer .footer-links li {
+  font-size: 14px;
+}
+footer .footer-links li img {
+  margin: 0 15px 0 0;
+}/*# sourceMappingURL=style.css.map */
