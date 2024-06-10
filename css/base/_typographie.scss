@@ -1,3 +1,31 @@
-$fontbody: 'roboto', sans-serif;
-$fontTitle: 'roboto';
+@mixin typo-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
 
+@mixin typo-sous-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+@mixin title-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+
+@mixin logo {
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+@mixin typo-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}

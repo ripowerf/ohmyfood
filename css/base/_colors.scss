@@ -1,8 +1,27 @@
-// mes couleurs variables
 
 $color-white: #fff;
+$color-grey-clair: #EAEAEA;
+$color-grey-fonce: #F6F6F6;
 $color-green: #99e2d0;
 $color-dark-green: #eafbff;
 $color-blue: #89c8fa;
 $color-dark-blue: #c5e2f8;
 $color-purple: #d5f0f8;
+$color-gradient: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+
+@mixin shadow-badge {
+    box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+@mixin shadow-card {
+    box-shadow: 0px 4px 15px 0px #0000001A;
+}
+
+@mixin shadow-button {
+    box-shadow: 0px 4px 10px 0px #00000040;
+}
+
+@mixin shadow-instructions {
+    box-shadow: 0px 4px 15px 0px #00000026;
+}
