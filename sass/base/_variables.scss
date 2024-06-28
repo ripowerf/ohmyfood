@@ -1,14 +1,26 @@
+// variables.scss
+
+// Colors
 
 $color-white: #fff;
-$color-grey-clair: #EAEAEA;
-$color-grey-fonce: #F6F6F6;
+$color-grey-clair: #F6F6F6;
+$color-grey-fonce: #000000;
 $color-green: #99e2d0;
-$color-dark-green: #eafbff;
+$color-dark-green: #008766;
 $color-blue: #89c8fa;
 $color-dark-blue: #c5e2f8;
-$color-purple: #d5f0f8;
+$color-purple: #9356DC;
 $color-gradient: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
+// Typography
+
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 16px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+
+// Mixins
 
 @mixin shadow-badge {
     box-shadow: 0px 2px 4px 0px #00000026;
@@ -25,3 +37,10 @@ $color-gradient: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 @mixin shadow-instructions {
     box-shadow: 0px 4px 15px 0px #00000026;
 }
+
+// breackpoint
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

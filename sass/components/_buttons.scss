@@ -1,0 +1,59 @@
+// buttons.scss
+
+@use '../base/variables.scss' as *;
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: $color-gradient;
+  color: $color-white;
+  text-align: center;
+  text-decoration: none;
+  @include shadow-button;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    transform: scale(110%);
+  } 
+
+  &--secondary {
+    background-color: $color-blue;
+
+    &:hover {
+        transform: scale(110%);
+    }
+  }
+}
+
+  .like-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  
+    &__icon {
+      font-size: 1.5em;
+      margin-right: 5px;
+      color: $color-grey-fonce;
+    }
+  
+    &__count {
+      font-size: 1em;
+      color: $color-grey-fonce;
+    }
+  
+    &--active .like-button__icon,
+    &--active .like-button__count {
+      color: $color-purple;
+    }
+  }
+
+.nouveau {
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 1.5em;
+  border-radius: 2px;
+  background-color: $color-green;
+}

@@ -1,0 +1,222 @@
+// main.scss
+
+@use 'base/normalize';
+@use 'base/variables';
+@use 'base/typography';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/main';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 20px 50px 20px;
+  gap: 25px;
+
+  a {
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+.section-functionality {
+
+    padding: 20px;
+    background-color: variables.$color-white;
+
+    @media (min-width: 992px) {
+      padding: 50px 180px 50px 180px;
+    }
+
+    ol {
+      list-style: none;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @media (min-width: 992px) {
+        display: flex;
+        flex-direction: row;
+        }
+      }
+  
+      li {
+        display: flex;
+        justify-content: start;
+        text-align: center;
+        position: relative;
+        flex: 1;
+        padding: 20px 20px 20px 50px;
+        gap: 30px;
+        background: variables.$color-grey-clair;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px 0px #00000026;
+
+        .step-number {
+            position: absolute;
+            background-color: variables.$color-purple;
+            width: 24px;
+            height: 24px;
+            border-radius: 50px;
+            color: variables.$color-white;
+            margin-left: -60px;
+        }
+      }
+    }
+  
+.section-restau {
+  padding: 20px;
+
+  @media (min-width: 992px) {
+    padding: 50px 180px 50px 180px;
+  }
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      gap: 40px;
+    }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0;
+
+        @media (min-width: 992px) {
+          width: 490px;
+          display: flex;
+          flex-grow: 1;
+          flex-wrap: wrap;
+        }
+      }
+
+      h3 {
+        margin: 20px 0 0 20px;
+        color: variables.$color-grey-fonce;
+      }
+
+      p {
+        margin: 0 0 20px 20px;
+        color: variables.$color-grey-fonce;
+      }
+
+      .nouveau {
+        position: absolute;
+        border-radius: 2px;
+        padding: 5px;
+        top: 5px;
+        right: 5px;
+        color: variables.$color-dark-green;
+        background-color: variables.$color-green;
+      }
+    }
+  }
+
+.icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    transition: color 0.3s ease, background 0.3s ease;
+    position: absolute;
+    z-index: 10;
+    bottom: 23px;
+    right: 20px;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle:checked + .icon i {
+    background: variables.$color-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+
+// page la palette du gout //
+
+.image-slider {
+  width: 100%;
+  height: 375px;
+  z-index: 1;
+}
+
+.menu {
+  z-index: 2;
+  padding: 20px;
+  background-color: variables.$color-grey-clair;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu-header {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: 'Shrikhand';
+      font-size: 28px;
+      font-style: italic;
+      font-weight: 400;
+      text-align: left;
+
+    }
+  }
+
+  .menu-section {
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ccc;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+

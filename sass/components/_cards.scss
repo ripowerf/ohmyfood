@@ -1,0 +1,37 @@
+// cards.scss
+
+@use '../base/variables.scss' as *;
+
+.card {
+  background-color: $color-white;
+  border-radius: 10px;
+  @include shadow-card;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    @include shadow-card;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 1.25em;
+    font-weight: $font-weight-bold;
+  }
+
+  &__subtitle {
+    font-size: 1em;
+    color: $color-dark-blue;
+  }
+
+  &__text {
+    font-size: 0.875em;
+    color: $color-grey-fonce;
+  }
+}

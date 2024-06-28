@@ -1,0 +1,58 @@
+// footer.scss
+
+@use '../base/variables.scss' as *;
+
+footer {
+  background: $color-grey-fonce;
+  color: $color-white;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 63px;
+    margin: 0;
+    z-index: 10;
+    font-family: 'Shrikhand';
+    font-size: 18px;
+  }
+
+  .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7px;
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .link-picto {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        @media (min-width: 992px) {
+          flex-direction: row;
+        }
+      }
+
+      li img {
+          margin: 0 0.5em 0 0;
+      }
+  }
+}
