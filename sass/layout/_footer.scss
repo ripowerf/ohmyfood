@@ -51,8 +51,16 @@ footer {
         }
       }
 
-      li img {
+      li {
+        padding: 0;
+        background: none;
+        border-radius: none;
+        display: block;
+        white-space: nowrap;
+
+        img {
           margin: 0 0.5em 0 0;
+        }
       }
   }
 }

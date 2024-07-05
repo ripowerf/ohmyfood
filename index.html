@@ -21,8 +21,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body id="home-page">
     <header>
+        <a href="index.html"><img class="icon-to-hide" src="assets/images/logo/back-icon.svg" alt=""></a>
         <h1 class="logo">ohmyfood</h1>
         <div class="location">
             <img src="./assets/images/logo/pin-map.svg" alt="">
@@ -64,54 +65,62 @@
     <section id="ancre-restau" class="section-restau">
         <h2>Restaurants</h2>
         <div class="restaurants">
-        <div class="card">
-            <img class="card__image" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'une assiette de la palette du gout">
-            <div class="restaurant-info">
-                <h3 class="card__title">La palette du goût</h3>
-                <p class="card__subtitle">Ménilmontant</p>
-                <input type="checkbox" id="toggle1" class="toggle" />
-                <label for="toggle1" class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </label>
-            </div>
-            <span class="nouveau">Nouveau</span>
-        </div>
-        <div class="card">
-            <img class="card__image" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image d'une assiette de la palette du gout">
-            <div class="restaurant-info">
-                <h3 class="card__title">La note enchantée</h3>
-                <p class="card__subtitle">Charonne</p>
-                <input type="checkbox" id="toggle2" class="toggle" />
-                <label for="toggle2" class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </label>
-            </div>
-            <span class="nouveau">Nouveau</span>
-        </div>
-        <div class="card">
-            <img class="card__image" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image d'une assiette de la palette du gout">
-            <div class="restaurant-info">
-                <h3 class="card__title">À la française</h3>
-                <p class="card__subtitle">Cité Rouge</p>
-                <input type="checkbox" id="toggle3" class="toggle" />
-                <label for="toggle3" class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </label>
-            </div>
-            <span class="nouveau">Nouveau</span>
-        </div>
-        <div class="card">
-          <img class="card__image" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'une assiette de la palette du gout">
-              <div class="restaurant-info">
-                <h3 class="card__title">Le délice des sens</h3>
-                <p class="card__subtitle">Folie-Méricourt</p>
-                <input type="checkbox" id="toggle4" class="toggle" />
-                <label for="toggle4" class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </label>
-              <span class="nouveau">Nouveau</span>
-              </div>
-        </div>
+            <a href="la-palette-du-gout.html">
+                <div class="card">
+                    <img class="card__image" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'une assiette de la palette du gout">
+                    <div class="restaurant-info">
+                        <h3 class="card__title">La palette du goût</h3>
+                        <p class="card__subtitle">Ménilmontant</p>
+                        <input type="checkbox" id="toggle1" class="toggle" />
+                        <label for="toggle1" class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
+                    <span class="nouveau">Nouveau</span>
+                </div>
+            </a>
+            <a href="la-note-enchantee.html">
+                <div class="card">
+                    <img class="card__image" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image d'une assiette de la palette du gout">
+                    <div class="restaurant-info">
+                        <h3 class="card__title">La note enchantée</h3>
+                        <p class="card__subtitle">Charonne</p>
+                        <input type="checkbox" id="toggle2" class="toggle" />
+                        <label for="toggle2" class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
+                    <span class="nouveau">Nouveau</span>
+                </div>
+            </a>
+            <a href="a-la-francaise.html">
+                <div class="card">
+                    <img class="card__image" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image d'une assiette de la palette du gout">
+                    <div class="restaurant-info">
+                        <h3 class="card__title">À la française</h3>
+                        <p class="card__subtitle">Cité Rouge</p>
+                        <input type="checkbox" id="toggle3" class="toggle" />
+                        <label for="toggle3" class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
+                    <span class="nouveau">Nouveau</span>
+                </div>
+            </a>
+            <a href="le-delice-des-sens.html">
+                <div class="card">
+                    <img class="card__image" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image d'une assiette de la palette du gout">
+                    <div class="restaurant-info">
+                        <h3 class="card__title">Le délice des sens</h3>
+                        <p class="card__subtitle">Folie-Méricourt</p>
+                        <input type="checkbox" id="toggle4" class="toggle" />
+                        <label for="toggle4" class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    <span class="nouveau">Nouveau</span>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
   </main>
